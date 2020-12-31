@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+
+/* Put custom CSS here */
+
+html {
+  font-size: 18px;
+}
+
+@tailwind utilities;

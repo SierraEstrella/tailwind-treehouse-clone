@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles/tailwind.css" />
+  <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css" />
+  <title>Document</title>
+</head>
+<body>
+  <!-- main div -->
+  <main class="bg-gray-200 tracking-wider">
+    <!--   header div -->
+    <header class="bg-gray-700 text-gray-300">
+      <div>
+        <div class="divide-solid divide-x-2 divide-gray-600 flex justify-start items-center">
+          <!-- container for divider btw home and nav -->
+          <div class="group px-7 hover:text-white ease-in ease-out duration-200 cursor-pointer flex items-center py-5">
+            <!-- container for logo and home -->
+            <div>
+              <i class="fas fa-frog text-2xl group-hover:text-white ease-in ease-out duration-200 text-emerald-400"></i>
+            </div>
+            <p class="pl-4">
+              Home
+            </p>
+          </div>
+          <nav class="flex">
+            <p class="ml-7">
+              Techdegree
+            </p>
+            <p class="ml-7">
+              Tracks
+            </p>
+            <p class="ml-7">
+              Library
+            </p>
+            <p class="ml-7">
+              Community
+            </p>
+            <p class="ml-7">
+              Support
+            </p>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- end header div   -->
+    <!--  First Grid  -->
+    <div class="flex flex-col mt-8 mx-6 xl:mx-28 text-gray-600">
+      <!-- blue banner   -->
+      <div 
+        class="py-12 bg-blue-900 bg-cover bg-center rounded shadow flex justify-between items-center px-3 text-white text-lg "
+        style="background-image: url('./images/100-days-of-code-bg-b55134a18cc519086fb00fda35e7be2f67251d8e0deb3828f2c7c8d514b32ff7.svg')"
+      >
+        <p>
+          Ready to take your learning to the next level?
+        </p>
+        <p class="font-thin">
+          Take the #100DaysOfCode challenge with Treehouse!
+        </p>
+        <!-- green button        -->
+        <div> 
+          <button class="bg-emerald-500 py-2 rounded px-5 items-center whitespace-nowrap ml-3 hover:bg-emerald-600 ease-in duration-200"
+          >
+            Learn More
+          </button>
+          <!-- end green button       -->
+          <i class="ml-1 hover:text-gray-400 ease-in ease-out duration-200 fas fa-times"></i>
+        </div>  
+      </div>
+      <!-- end blue banner     -->
+      <div class="mt-8">Home</div>
+      <!-- white box 1  -->
+      <section 
+        class="bg-white rounded shadow start-2 mt-2 py-6 px-8"
+      >
+        <nav class="flex items-center">
+          <div 
+            class="text-black w-max "
+          >
+            In Progress 
+          </div>
+          <div 
+            class="w-max ml-7"
+          > 
+            Bookmarks 
+          </div>
+          <div 
+            class="w-max ml-7"
+          > 
+            Completed 
+          </div>
+        </nav>
+      </section>
+      <!-- end white box 1       -->
+      <!-- white box 2    -->
+      <section class="bg-white rounded mt-8 shadow pb-6 justify-between">
+        <div>
+          <div class="py-6 px-8">
+            <div class="flex justify-between items-center">
+              <p class="text-indigo-700">
+                UX: Interaction Design
+              </p>
+              <button class="text-indigo-700 text-sm bg-white rounded border-2 border-indigo-700 w-max py-2 px-5">
+                View Track
+              </button>
+            </div>
+            <hr class="mt-7"/>
+          </div>
+          <p class="text-2xl px-8">
+            You're Doing Great!
+          </p>
+          <p class="">
+            It looks like you were last working on the Designing Interactions Course. Today, we recommend completing the next 3 steps:
+          </p>
+        </div>
+        <!-- gray bars    -->
+        <div class="divide-y divide-gray-300 divide-solid border-t border-b border-gray-300">
+          <a href="#" class="w-full py-4 bg-gray-200 hover:bg-gray-100 px-8 flex justify-between items-center">
+            <div class="flex">
+              <i class="fas fa-user text-gray-300"></i> 
+              <p>
+                Intro to Designing Interations
+              </p>
+            </div>
+            <p class="text-sm">
+              1:48
+            </p>     
+          </a>
+          <a href="#" class="w-full py-4 bg-gray-200 hover:bg-gray-100 px-8 flex justify-between items-center">
+            <div> 
+              <p>
+                How to Design Interactions
+              </p>
+            </div>
+            <p class="text-sm">
+              18:20
+            </p>
+          </a>
+          <a href="#"  class="w-full py-4 bg-gray-200 hover:bg-gray-100 px-8 flex justify-between items-center">
+            <div>  
+              <p>
+                Reviewing IxD in Practice
+              </p>
+            </div>
+            <p class="text-sm">
+              5 questions
+            </p>
+          </a>
+          <!-- resume button -->
+        </div>
+        <button class="bg-purple-900 text-white text-sm rounded w-max py-2 px-7 mt-6 ml-7">
+          Resume
+        </button>
+      </section>
+      <!-- end white box 2      -->
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-12 mx-6 xl:mx-28 gap-6 mt-8">
+      <!--  3 grid boxes    -->
+      <!-- grid box left      -->
+      <div class="md:col-span-6 xl:col-span-4 h-72 bg-white rounded shadow">
+      </div>
+      <!-- grid box mid     -->
+      <div class="md:col-span-6 xl:col-span-4 h-72 bg-white rounded shadow">
+      </div>
+      <!--  grid box right    -->
+      <div class="hidden xl:block xl:col-span-4 h-72 bg-white rounded shadow">
+      </div>
+    </div>
+    <!--  footer  -->
+  </main>
+</body>
+</html>
